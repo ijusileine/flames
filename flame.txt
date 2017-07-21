@@ -1,0 +1,29 @@
+
+#include<string>
+#include<iostream>
+using namespace std;
+int main()
+{
+    char name1[100],name2[100];
+    ;int Arroz,Carne,um=0,m=0,i,j,tc;
+    std::cout<<"enter name 1";
+    std::cin>>name1;
+    std::cout<<"enter name 2";
+    std::cin>>name2;
+   tc=Arroz+Carne;
+    for(i=0;i<Arroz;i++)
+    {
+        for(j=i+1;j<=Carne;i++)
+        {
+            if(name1[i]==name2[j])
+            {
+                name1[i]=name2[j]=-1;
+                m=m+1;
+                break;
+            }
+        }
+    }
+  
+    um=tc-(m*2);
+    std::cout<<Arroz<<" "<<Carne<<" "<<um<<" "<<m<<endl;
+}
